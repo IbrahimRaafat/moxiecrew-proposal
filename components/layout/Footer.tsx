@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-display text-lg font-bold mb-4">Moxie Crew Proposal</h3>
+            <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-12 w-12 mb-4" />
           </div>
 
           <div>

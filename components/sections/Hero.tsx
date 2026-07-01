@@ -37,14 +37,14 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-32" style={{ position: 'relative' }}>
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-4 sm:mb-6 leading-tight"
+          className="mb-4 sm:mb-6 flex justify-center"
         >
-          Moxie Crew Project Proposal
-        </motion.h1>
+          <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew Project Proposal" className="h-48 sm:h-56 md:h-64 w-auto" />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
