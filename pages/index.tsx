@@ -32,13 +32,16 @@ export default function Home() {
         <Navbar />
         <main>
           <Hero />
-          {/* Section 2: Website Revamp */}
+          {/* Section 1: Brand Snapshot */}
           <BrandSnapshot />
+          {/* Section 2: SEO & AI Optimization */}
           <SEOAIOptimization />
+          {/* Section 3: Revamp Plan */}
           <RevampPlan />
-          <Investment />
-          {/* Section 3: Loyalty Program */}
+          {/* Section 4: Loyalty Program */}
           <LoyaltySystem />
+          {/* Section 5: Investment/Quotation */}
+          <Investment />
           {/* CTA */}
           <CTA />
         </main>

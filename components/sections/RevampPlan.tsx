@@ -45,15 +45,15 @@ export default function RevampPlan() {
   ];
 
   return (
-    <section id="revamp" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center gap-6 mb-16">
-          <AwardBadge number="04" delay={0.1} />
+    <section id="revamp" className="py-16 sm:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-16">
+          <AwardBadge number="03" delay={0.1} />
           <div>
-            <h2 className="font-display text-5xl font-bold text-primary">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
               Suggested Improvements
             </h2>
-            <p className="text-lg text-muted mt-2">A complete digital transformation</p>
+            <p className="text-base sm:text-lg text-muted mt-2">A complete digital transformation</p>
           </div>
         </div>
 

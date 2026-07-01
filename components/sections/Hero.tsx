@@ -36,12 +36,12 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-32" style={{ position: 'relative' }}>
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-32" style={{ position: 'relative' }}>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-6xl md:text-7xl font-bold text-primary mb-6 leading-tight"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-4 sm:mb-6 leading-tight"
         >
           Moxie Crew Project Proposal
         </motion.h1>
@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-muted mb-12 max-w-2xl mx-auto"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted mb-8 sm:mb-12 max-w-2xl mx-auto"
         >
           Website revamp<br />
           Gift card and loyalty programs solutions
