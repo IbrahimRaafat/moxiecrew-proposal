@@ -6,7 +6,6 @@ const sections = [
   { id: "website-review", label: "Website Review" },
   { id: "loyalty", label: "Loyalty Program" },
   { id: "investment", label: "Quotation" },
-  { id: "cta", label: "CTA" },
 ];
 
 export default function Navbar() {

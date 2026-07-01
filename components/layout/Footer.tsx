@@ -56,11 +56,6 @@ export default function Footer() {
                   Quotation
                 </a>
               </li>
-              <li>
-                <a href="#cta" className="hover:text-white transition-colors">
-                  CTA
-                </a>
-              </li>
             </ul>
           </div>
         </div>
