@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Moxie Crew — Strategic Proposal by Ibrahim Raafat</title>
+        <title>Moxie Crew — Proposal by Ibrahim Raafat</title>
         <meta
           name="description"
           content="A strategic proposal for Moxie Crew's website revamp and loyalty system. Discover how we'll transform your digital presence."
