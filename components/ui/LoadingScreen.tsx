@@ -10,19 +10,24 @@ export default function LoadingScreen() {
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 90) return 90;
-        return prev + Math.random() * 30;
+        return prev + Math.random() * 25;
       });
-    }, 200);
+    }, 150);
 
-    // Remove loading screen when page fully loads
+    // Minimum 2 seconds before allowing exit
+    const minTimeout = setTimeout(() => {
+      setProgress(100);
+    }, 2000);
+
+    // Remove loading screen when page fully loads (but after 2 seconds min)
     const handleLoad = () => {
       setProgress(100);
-      setTimeout(() => setIsLoading(false), 500);
+      setTimeout(() => setIsLoading(false), 2100);
     };
 
     window.addEventListener("load", handleLoad);
 
-    // Fallback timeout
+    // Fallback timeout (3 seconds total)
     const timeout = setTimeout(() => {
       setProgress(100);
       setTimeout(() => setIsLoading(false), 500);
@@ -30,20 +35,34 @@ export default function LoadingScreen() {
 
     return () => {
       clearInterval(interval);
+      clearTimeout(minTimeout);
       clearTimeout(timeout);
       window.removeEventListener("load", handleLoad);
     };
   }, []);
 
-  if (!isLoading) return null;
-
   return (
     <motion.div
-      className="fixed inset-0 bg-white z-50 flex items-center justify-center"
-      animate={{ opacity: isLoading ? 1 : 0 }}
-      transition={{ duration: 0.5 }}
+      className={`fixed inset-0 bg-white z-[9999] flex items-center justify-center ${
+        !isLoading ? "pointer-events-none" : ""
+      }`}
+      initial={{ opacity: 1, scale: 1 }}
+      animate={{
+        opacity: isLoading ? 1 : 0,
+        scale: isLoading ? 1 : 0.8,
+        y: isLoading ? 0 : -100,
+      }}
+      transition={{
+        duration: 1,
+        ease: "easeInOut"
+      }}
     >
-      <div className="flex flex-col items-center gap-8">
+      <motion.div
+        className="flex flex-col items-center gap-8"
+        initial={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <img
           src="/logos/moxie-crew-heart.svg"
           alt="Moxie Crew"
@@ -54,10 +73,10 @@ export default function LoadingScreen() {
             className="h-full bg-primary"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
-            transition={{ type: "spring", stiffness: 50, damping: 20 }}
+            transition={{ type: "spring", stiffness: 40, damping: 20 }}
           />
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
