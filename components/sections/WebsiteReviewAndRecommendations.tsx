@@ -111,7 +111,6 @@ export default function WebsiteReviewAndRecommendations() {
                       <li>Performance Score: 55/100</li>
                       <li>SEO Score: 62/100</li>
                       <li>UX Issues Identified</li>
-                      <li>Missing Analytics</li>
                     </ul>
                   </div>
                 </div>
