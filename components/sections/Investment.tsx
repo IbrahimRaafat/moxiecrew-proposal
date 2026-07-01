@@ -31,6 +31,12 @@ export default function Investment() {
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Website Revamp</h3>
             </div>
 
+            <div className="text-center mb-8 pb-8 border-b border-white/20">
+              <p className="text-sm opacity-75 mb-2">Investment</p>
+              <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
+              <p className="text-sm opacity-75">After specifying details (if wanted)</p>
+            </div>
+
             <div className="space-y-4">
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -99,46 +105,48 @@ export default function Investment() {
             </button>
           </motion.div>
 
-          {/* Shopify Website Management Retainer Card */}
+          {/* Gift Card & Loyalty Solutions Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="p-6 sm:p-8 md:p-12 bg-gradient-to-br from-blue-600 to-blue-500 text-white rounded-2xl border-2 border-blue-400 flex flex-col"
+            className="p-6 sm:p-8 md:p-12 bg-gradient-to-br from-green-600 to-green-500 text-white rounded-2xl border-2 border-green-400"
           >
             <div className="text-center mb-6 sm:mb-8">
-              <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Shopify Website Management</h3>
+              <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Gift Card & Loyalty Solutions</h3>
             </div>
 
             <div className="text-center mb-8 pb-8 border-b border-white/20">
-              <p className="text-sm opacity-75 mb-2">Monthly Retainer</p>
-              <p className="font-display text-5xl font-bold mb-2">LE 8,000</p>
-              <p className="text-sm opacity-75">Per month</p>
+              <p className="text-sm opacity-75 mb-2">Investment</p>
+              <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
+              <p className="text-sm opacity-75">After specifying details (if wanted)</p>
             </div>
 
-            <div className="mb-6">
-              <ul className="space-y-3 text-sm opacity-90">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-200 font-bold">•</span>
-                  <span>Manage Shopify plugins and app configurations</span>
+            <div className="space-y-4">
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 font-bold">✓</span>
+                  <span>Physical NFC Cards with embedded loyalty technology</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-200 font-bold">•</span>
-                  <span>Create and populate products and collections</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 font-bold">✓</span>
+                  <span>Google & Apple Wallet digital passes integration</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-200 font-bold">•</span>
-                  <span>Update homepage banners and promotional content</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 font-bold">✓</span>
+                  <span>Physical and digital gift cards with custom denominations</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-200 font-bold">•</span>
-                  <span>Monitor store performance and analytics</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 font-bold">✓</span>
+                  <span>Branded packaging and design</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 font-bold">✓</span>
+                  <span>Online and in-store redemption capabilities</span>
                 </li>
               </ul>
             </div>
-
-            <p className="text-xs opacity-75 italic">Perfect for stores already optimized and looking for ongoing management</p>
           </motion.div>
         </div>
 

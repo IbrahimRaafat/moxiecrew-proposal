@@ -46,15 +46,27 @@ export default function Hero() {
           Moxie Crew Project Proposal
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted mb-8 sm:mb-12 max-w-2xl mx-auto"
+          className="mb-8 sm:mb-12 max-w-2xl mx-auto flex flex-col items-center"
         >
-          Website revamp<br />
-          Gift card and loyalty programs solutions
-        </motion.p>
+          <ul className="space-y-2 text-base sm:text-lg md:text-xl text-muted">
+            <li className="flex items-center gap-3 justify-center">
+              <span className="text-primary font-bold">•</span>
+              <span>Website revamp</span>
+            </li>
+            <li className="flex items-center gap-3 justify-center">
+              <span className="text-primary font-bold">•</span>
+              <span>Gift card and loyalty programs solutions</span>
+            </li>
+            <li className="flex items-center gap-3 justify-center">
+              <span className="text-primary font-bold">•</span>
+              <span>Current Website Management/Maintenance</span>
+            </li>
+          </ul>
+        </motion.div>
 
         <motion.div
           initial={{ scaleX: 0 }}
