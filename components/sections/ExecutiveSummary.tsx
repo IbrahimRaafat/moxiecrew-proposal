@@ -6,8 +6,6 @@ export default function ExecutiveSummary() {
     "Comprehensive digital transformation strategy for Moxie Crew's online presence",
     "Current performance gaps identified and actionable improvement roadmap",
     "Three flexible service offerings tailored to business needs",
-    "Proven expertise in website optimization, SEO, and loyalty systems",
-    "Phased approach with measurable KPIs and ongoing support",
   ];
 
   return (
