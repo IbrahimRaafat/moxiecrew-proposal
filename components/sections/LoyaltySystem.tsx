@@ -37,6 +37,9 @@ export default function LoyaltySystem() {
             <p className="text-lg text-muted mt-2">
               What we can offer
             </p>
+            <p className="text-sm text-muted mt-4 italic">
+              All operational and hardware side (if existing/needed) is managed and provided by your team
+            </p>
           </div>
         </div>
 
