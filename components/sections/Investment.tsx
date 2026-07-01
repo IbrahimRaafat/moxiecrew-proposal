@@ -124,7 +124,7 @@ export default function Investment() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">✓</span>
-                  <span>Physical NFC Cards with embedded loyalty technology</span>
+                  <span>Physical NFC Cards</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">✓</span>
@@ -137,10 +137,6 @@ export default function Investment() {
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">✓</span>
                   <span>Branded packaging and design</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">✓</span>
-                  <span>Online and in-store redemption capabilities</span>
                 </li>
               </ul>
             </div>
