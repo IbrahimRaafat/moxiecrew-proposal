@@ -9,7 +9,7 @@ export default function LoyaltySystem() {
       icon: Smartphone,
       title: "Physical NFC Cards",
       description:
-        "Premium PVC loyalty cards with embedded NFC technology. Customers tap to check points and access rewards—no app required.",
+        "Premium loyalty cards with embedded NFC technology. Customers tap to check points and access rewards—no app required.",
     },
     {
       icon: Wallet,
@@ -38,7 +38,7 @@ export default function LoyaltySystem() {
               What we can offer
             </p>
             <p className="text-xs sm:text-sm text-muted mt-4 italic">
-              All operational and hardware side (if existing/needed) is managed and provided by your team
+              All operational and hardware side (if needed) is managed and provided by your team
             </p>
           </div>
         </div>

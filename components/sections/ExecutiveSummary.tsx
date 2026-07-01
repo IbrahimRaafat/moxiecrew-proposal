@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import AwardBadge from "../ui/AwardBadge";
+import { Package, Code, Palette, PenTool, Cpu, Chip } from "lucide-react";
 
 export default function ExecutiveSummary() {
-  const highlights = [
-    "Comprehensive digital transformation strategy for Moxie Crew's online presence",
-    "Current performance gaps identified and actionable improvement roadmap",
-    "Three flexible service offerings tailored to business needs",
+  const highlights: string[] = [];
+
+  const services = [
+    { icon: Package, name: "Packaging" },
+    { icon: Code, name: "Web Development" },
+    { icon: Palette, name: "UI/UX Design" },
+    { icon: PenTool, name: "Graphic Design" },
+    { icon: Cpu, name: "Digital Fabrication" },
+    { icon: Chip, name: "Hardware Development" },
   ];
 
   return (
@@ -29,7 +35,7 @@ export default function ExecutiveSummary() {
           className="space-y-6"
         >
           <p className="text-base sm:text-lg text-muted leading-relaxed">
-            This proposal outlines a strategic digital transformation for Moxie Crew, combining website performance optimization, SEO excellence, and comprehensive loyalty program solutions. We've identified key gaps in your current digital presence and developed a data-driven approach to position Moxie Crew as the market leader in Egyptian activewear.
+            This proposal outlines a strategic digital transformation for Moxie Crew, combining website performance optimization, SEO excellence, and loyalty program solutions with some recommendations and analysis mentioned below.
           </p>
 
           <div className="space-y-4">
@@ -44,6 +50,34 @@ export default function ExecutiveSummary() {
               >
                 <span className="text-primary font-bold text-lg">•</span>
                 <p className="text-base sm:text-lg text-muted">{highlight}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Services Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-16 sm:mt-24"
+        >
+          <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-8 sm:mb-12">
+            Proposed Services
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+            {services.map((service, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all text-center"
+              >
+                <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
+                <p className="font-semibold text-sm sm:text-base text-primary">{service.name}</p>
               </motion.div>
             ))}
           </div>
