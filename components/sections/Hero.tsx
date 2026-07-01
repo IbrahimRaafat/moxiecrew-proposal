@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-4 sm:mb-6 flex justify-center"
         >
-          <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew Project Proposal" className="h-48 sm:h-56 md:h-64 w-auto" />
+          <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew Project Proposal" className="h-32 sm:h-40 md:h-48 w-auto" />
         </motion.div>
 
         <motion.div
