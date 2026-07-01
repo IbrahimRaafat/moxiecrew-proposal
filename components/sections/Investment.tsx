@@ -67,7 +67,7 @@ export default function Investment() {
             className="p-6 sm:p-8 md:p-12 bg-black text-white rounded-2xl border-2 border-gray-800 flex flex-col"
           >
             <div className="text-center mb-6 sm:mb-8">
-              <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Current Website Management/Maintenance</h3>
+              <h3 className="font-display text-xl sm:text-2xl font-bold mb-3 sm:mb-4 leading-tight">Current Website<br />Management/Maintenance</h3>
             </div>
 
             <div className="text-center mb-8 pb-8 border-b border-gray-600">
@@ -97,7 +97,7 @@ export default function Investment() {
 
             <button
               onClick={() => setIsMaintenanceModalOpen(true)}
-              className="mt-auto px-6 py-2 bg-white text-accent font-semibold rounded-lg hover:bg-opacity-90 transition-all"
+              className="mt-auto px-6 py-2 bg-white text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all"
             >
               Read More
             </button>

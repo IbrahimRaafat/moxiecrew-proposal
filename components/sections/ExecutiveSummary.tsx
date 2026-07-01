@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import AwardBadge from "../ui/AwardBadge";
-import { CheckCircle } from "lucide-react";
 
 export default function ExecutiveSummary() {
   const highlights = [
@@ -45,24 +44,11 @@ export default function ExecutiveSummary() {
                 viewport={{ once: true }}
                 className="flex gap-4 items-start"
               >
-                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-primary font-bold text-lg">•</span>
                 <p className="text-base sm:text-lg text-muted">{highlight}</p>
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            viewport={{ once: true }}
-            className="pt-6 border-t border-gray-200"
-          >
-            <p className="text-base sm:text-lg text-muted font-semibold mb-3">Next Steps:</p>
-            <p className="text-base sm:text-lg text-muted">
-              Schedule a discovery call to discuss your specific needs, timeline, and customize a solution that aligns with Moxie Crew's vision and budget.
-            </p>
-          </motion.div>
         </motion.div>
       </div>
     </section>
