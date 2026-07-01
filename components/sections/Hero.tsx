@@ -41,9 +41,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-4 sm:mb-6 flex justify-center"
+          className="mb-4 sm:mb-6 flex flex-col items-center justify-center"
         >
-          <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew Project Proposal" className="h-32 sm:h-40 md:h-48 w-auto" />
+          <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew" className="h-16 sm:h-20 md:h-24 w-auto mb-3" />
+          <p className="font-display text-2xl sm:text-3xl font-bold text-primary">Project Proposal</p>
         </motion.div>
 
         <motion.div

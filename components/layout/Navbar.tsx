@@ -3,12 +3,11 @@ import { useState } from "react";
 
 const sections = [
   { id: "hero", label: "01" },
-  { id: "brand", label: "02" },
-  { id: "audit", label: "03" },
-  { id: "revamp", label: "04" },
-  { id: "loyalty", label: "05" },
-  { id: "investment", label: "06" },
-  { id: "cta", label: "07" },
+  { id: "executive-summary", label: "02" },
+  { id: "website-review", label: "03" },
+  { id: "loyalty", label: "04" },
+  { id: "investment", label: "05" },
+  { id: "cta", label: "06" },
 ];
 
 export default function Navbar() {
@@ -27,8 +26,8 @@ export default function Navbar() {
       transition={{ duration: 0.8 }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-12 w-12" />
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+        <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-24 w-40" />
 
         <div className="hidden md:flex items-center gap-2">
           {sections.map((section) => (
