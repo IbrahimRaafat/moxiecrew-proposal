@@ -18,7 +18,7 @@ export default function Investment() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Website Revamp Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -97,6 +97,48 @@ export default function Investment() {
             >
               Read More
             </button>
+          </motion.div>
+
+          {/* Shopify Website Management Retainer Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="p-12 bg-gradient-to-br from-blue-600 to-blue-500 text-white rounded-2xl border-2 border-blue-400 flex flex-col"
+          >
+            <div className="text-center mb-8">
+              <h3 className="font-display text-3xl font-bold mb-4">Shopify Website Management</h3>
+            </div>
+
+            <div className="text-center mb-8 pb-8 border-b border-white/20">
+              <p className="text-sm opacity-75 mb-2">Monthly Retainer</p>
+              <p className="font-display text-5xl font-bold mb-2">LE 8,000</p>
+              <p className="text-sm opacity-75">Per month</p>
+            </div>
+
+            <div className="mb-6">
+              <ul className="space-y-3 text-sm opacity-90">
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <span>Manage Shopify plugins and app configurations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <span>Create and populate products and collections</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <span>Update homepage banners and promotional content</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <span>Monitor store performance and analytics</span>
+                </li>
+              </ul>
+            </div>
+
+            <p className="text-xs opacity-75 italic">Perfect for stores already optimized and looking for ongoing management</p>
           </motion.div>
         </div>
 
