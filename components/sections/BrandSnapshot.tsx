@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { BarChart3 } from "lucide-react";
+import AwardBadge from "../ui/AwardBadge";
 import LighthouseModal from "../LighthouseModal";
 
 export default function BrandSnapshot() {
@@ -41,6 +42,16 @@ export default function BrandSnapshot() {
   return (
     <section id="brand" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-16">
+          <AwardBadge number="02" delay={0.1} />
+          <div>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
+              Brand Snapshot
+            </h2>
+            <p className="text-base sm:text-lg text-muted mt-2">Current market position and strengths</p>
+          </div>
+        </div>
+
         {false && (
           <>
             {/* Weakness Points Card - COMMENTED OUT FOR NOW */}

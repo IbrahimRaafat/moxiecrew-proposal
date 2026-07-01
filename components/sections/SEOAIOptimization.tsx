@@ -378,7 +378,7 @@ export default function SEOAIOptimization() {
     <section id="seo-ai" className="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-16">
-          <AwardBadge number="02" delay={0.1} />
+          <AwardBadge number="03" delay={0.1} />
           <div>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
               SEO & AI Agent Optimization
