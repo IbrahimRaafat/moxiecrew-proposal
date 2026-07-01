@@ -21,6 +21,11 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
+                <a href="tel:+393206192364" className="hover:text-white transition-colors">
+                  +39 320 619 2364
+                </a>
+              </li>
+              <li>
                 <a href="mailto:ibrahimraafatt@gmail.com" className="hover:text-white transition-colors">
                   ibrahimraafatt@gmail.com
                 </a>
@@ -29,26 +34,26 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Proposal Package</h4>
+            <h4 className="font-semibold mb-4">Sections</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="#revamp" className="hover:text-white transition-colors">
-                  Website Revamp
+                <a href="#executive-summary" className="hover:text-white transition-colors">
+                  Executive Summary
                 </a>
               </li>
               <li>
-                <a href="#seo-ai" className="hover:text-white transition-colors">
-                  SEO & AI Strategy
-                </a>
-              </li>
-              <li>
-                <a href="#loyalty" className="hover:text-white transition-colors">
-                  Loyalty System
+                <a href="#website-review" className="hover:text-white transition-colors">
+                  Website Review
                 </a>
               </li>
               <li>
                 <a href="#loyalty" className="hover:text-white transition-colors">
-                  Gift Card Platform
+                  Loyalty & Gift Cards
+                </a>
+              </li>
+              <li>
+                <a href="#investment" className="hover:text-white transition-colors">
+                  Investment & Quotation
                 </a>
               </li>
             </ul>
