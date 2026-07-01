@@ -1,0 +1,84 @@
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import Grainient from "../Grainient";
+
+export default function Hero() {
+  const scrollToNext = () => {
+    document.getElementById("brand")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Grainient
+          color1="#f8edd6"
+          color2="#ff9183"
+          color3="#beffec"
+          timeSpeed={0.25}
+          colorBalance={0}
+          warpStrength={1}
+          warpFrequency={5}
+          warpSpeed={2}
+          warpAmplitude={50}
+          blendAngle={0}
+          blendSoftness={0.05}
+          rotationAmount={500}
+          noiseScale={2}
+          grainAmount={0.1}
+          grainScale={2}
+          grainAnimated={false}
+          contrast={1.5}
+          gamma={1}
+          saturation={1}
+          centerX={0}
+          centerY={0}
+          zoom={0.9}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-32" style={{ position: 'relative' }}>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-display text-6xl md:text-7xl font-bold text-primary mb-6 leading-tight"
+        >
+          Moxie Crew Project Proposal
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-xl md:text-2xl text-muted mb-12 max-w-2xl mx-auto"
+        >
+          Website revamp<br />
+          Gift card and loyalty programs solutions
+        </motion.p>
+
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12 origin-left"
+        />
+
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          onClick={scrollToNext}
+          className="mx-auto flex flex-col items-center gap-2 text-muted hover:text-primary transition-colors"
+        >
+          <span className="text-sm font-semibold">Scroll to explore</span>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          >
+            <ChevronDown className="w-6 h-6" />
+          </motion.div>
+        </motion.button>
+      </div>
+    </section>
+  );
+}
