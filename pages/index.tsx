@@ -3,9 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/Hero";
 import ExecutiveSummary from "../components/sections/ExecutiveSummary";
-import BrandSnapshot from "../components/sections/BrandSnapshot";
-import SEOAIOptimization from "../components/sections/SEOAIOptimization";
-import RevampPlan from "../components/sections/RevampPlan";
+import WebsiteReviewAndRecommendations from "../components/sections/WebsiteReviewAndRecommendations";
 import LoyaltySystem from "../components/sections/LoyaltySystem";
 import Investment from "../components/sections/Investment";
 import CTA from "../components/sections/CTA";
@@ -35,15 +33,11 @@ export default function Home() {
           <Hero />
           {/* Section 1: Executive Summary */}
           <ExecutiveSummary />
-          {/* Section 2: Brand Snapshot */}
-          <BrandSnapshot />
-          {/* Section 3: SEO & AI Optimization */}
-          <SEOAIOptimization />
-          {/* Section 4: Revamp Plan */}
-          <RevampPlan />
-          {/* Section 5: Loyalty Program */}
+          {/* Section 2: Current Website Review & Recommendations */}
+          <WebsiteReviewAndRecommendations />
+          {/* Section 3: Loyalty Program */}
           <LoyaltySystem />
-          {/* Section 6: Investment/Quotation */}
+          {/* Section 4: Investment/Quotation */}
           <Investment />
           {/* CTA */}
           <CTA />
