@@ -48,12 +48,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#loyalty" className="hover:text-white transition-colors">
-                  Loyalty & Gift Cards
+                  Loyalty Program
                 </a>
               </li>
               <li>
                 <a href="#investment" className="hover:text-white transition-colors">
-                  Investment & Quotation
+                  Quotation
+                </a>
+              </li>
+              <li>
+                <a href="#cta" className="hover:text-white transition-colors">
+                  CTA
                 </a>
               </li>
             </ul>

@@ -2,12 +2,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const sections = [
-  { id: "hero", label: "01" },
-  { id: "executive-summary", label: "02" },
-  { id: "website-review", label: "03" },
-  { id: "loyalty", label: "04" },
-  { id: "investment", label: "05" },
-  { id: "cta", label: "06" },
+  { id: "executive-summary", label: "Executive Summary" },
+  { id: "website-review", label: "Website Review" },
+  { id: "loyalty", label: "Loyalty Program" },
+  { id: "investment", label: "Quotation" },
+  { id: "cta", label: "CTA" },
 ];
 
 export default function Navbar() {
@@ -27,7 +26,9 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200"
     >
       <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
-        <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-24 w-40" />
+        <button onClick={() => scrollToSection("hero")} className="hover:opacity-80 transition-opacity">
+          <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-24 w-40" />
+        </button>
 
         <div className="hidden md:flex items-center gap-2">
           {sections.map((section) => (
@@ -63,7 +64,7 @@ export default function Navbar() {
               onClick={() => scrollToSection(section.id)}
               className="block w-full text-left px-4 py-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
             >
-              Section {section.label}
+              {section.label}
             </button>
           ))}
         </motion.div>
