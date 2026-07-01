@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-12 w-12 mb-4" />
+            <img src="/logos/moxie-crew-heart.svg" alt="Moxie Crew" className="h-20 w-20 mb-4" />
           </div>
 
           <div>
