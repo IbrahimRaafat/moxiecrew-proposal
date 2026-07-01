@@ -17,7 +17,7 @@ export default function ExecutiveSummary() {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
               Executive Summary
             </h2>
-            <p className="text-base sm:text-lg text-muted mt-2">Overview of the proposal and key deliverables</p>
+            <p className="text-base sm:text-lg text-muted mt-2">Overview of the proposal</p>
           </div>
         </div>
 
