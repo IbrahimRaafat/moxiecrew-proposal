@@ -3,59 +3,61 @@ import { useEffect, useState } from "react";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+    // Simulate loading progress
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 90) return 90;
+        return prev + Math.random() * 30;
+      });
+    }, 200);
 
-    return () => clearTimeout(timer);
+    // Remove loading screen when page fully loads
+    const handleLoad = () => {
+      setProgress(100);
+      setTimeout(() => setIsLoading(false), 500);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    // Fallback timeout
+    const timeout = setTimeout(() => {
+      setProgress(100);
+      setTimeout(() => setIsLoading(false), 500);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   if (!isLoading) return null;
 
   return (
     <motion.div
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-white z-50 flex items-center justify-center"
+      animate={{ opacity: isLoading ? 1 : 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed inset-0 bg-white z-50 flex items-center justify-center pointer-events-none"
     >
-      <motion.div
-        className="flex flex-col items-center gap-6"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <motion.img
+      <div className="flex flex-col items-center gap-8">
+        <img
           src="/logos/moxie-crew-heart.svg"
           alt="Moxie Crew"
-          className="h-24 w-24"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          className="h-32 w-32"
         />
-        <motion.div
-          className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden"
-          initial={{ width: 0 }}
-          animate={{ width: 256 }}
-          transition={{ duration: 1.8 }}
-        >
+        <div className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden">
           <motion.div
             className="h-full bg-primary"
             initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            transition={{ duration: 1.8, ease: "easeInOut" }}
+            animate={{ width: `${progress}%` }}
+            transition={{ type: "spring", stiffness: 50, damping: 20 }}
           />
-        </motion.div>
-        <motion.p
-          className="text-primary font-semibold"
-          animate={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          Loading
-        </motion.p>
-      </motion.div>
+        </div>
+      </div>
     </motion.div>
   );
 }
