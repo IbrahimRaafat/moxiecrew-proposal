@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import AwardBadge from "../ui/AwardBadge";
-import { Package, Code, Palette, PenTool, Cpu, Chip } from "lucide-react";
+import { Package, Code, Palette, PenTool, Cpu, Wrench } from "lucide-react";
 
 export default function ExecutiveSummary() {
   const highlights: string[] = [];
@@ -10,8 +10,8 @@ export default function ExecutiveSummary() {
     { icon: Code, name: "Web Development" },
     { icon: Palette, name: "UI/UX Design" },
     { icon: PenTool, name: "Graphic Design" },
-    { icon: Cpu, name: "Digital Fabrication" },
-    { icon: Chip, name: "Hardware Development" },
+    { icon: null, customImage: "/icons/digital-fabrication.svg", name: "" },
+    { icon: Cpu, name: "Hardware Development" },
   ];
 
   return (
@@ -74,10 +74,14 @@ export default function ExecutiveSummary() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all text-center"
+                className="p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all text-center flex flex-col items-center justify-center"
               >
-                <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
-                <p className="font-semibold text-sm sm:text-base text-primary">{service.name}</p>
+                {service.customImage ? (
+                  <img src={service.customImage} alt={service.name} className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4" />
+                ) : service.icon ? (
+                  <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
+                ) : null}
+                {service.name && <p className="font-semibold text-sm sm:text-base text-primary">{service.name}</p>}
               </motion.div>
             ))}
           </div>
