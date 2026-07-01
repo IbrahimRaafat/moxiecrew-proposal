@@ -38,9 +38,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-32" style={{ position: 'relative' }}>
         <motion.div
-          initial={{ opacity: 0, y: 50, scale: 0.95 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1, delay: 2.2, ease: "easeOut" }}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
           className="mb-4 sm:mb-6 flex flex-col items-center justify-center"
         >
           <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew" className="h-16 sm:h-20 md:h-24 w-auto mb-3" />
@@ -48,9 +48,9 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50, scale: 0.95 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1, delay: 2.4, ease: "easeOut" }}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 2.35, ease: "easeOut" }}
           className="mb-8 sm:mb-12 max-w-2xl mx-auto flex flex-col items-center"
         >
           <ul className="space-y-2 text-base sm:text-lg md:text-xl text-muted">
@@ -77,9 +77,9 @@ export default function Hero() {
         />
 
         <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.6 }}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 2.5 }}
           onClick={scrollToNext}
           className="mx-auto flex flex-col items-center gap-2 text-muted hover:text-primary transition-colors"
         >

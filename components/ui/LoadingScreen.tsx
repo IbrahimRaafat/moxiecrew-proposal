@@ -46,14 +46,13 @@ export default function LoadingScreen() {
       className={`fixed inset-0 bg-white z-[9999] flex items-center justify-center ${
         !isLoading ? "pointer-events-none" : ""
       }`}
-      initial={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 1, x: 0 }}
       animate={{
         opacity: isLoading ? 1 : 0,
-        scale: isLoading ? 1 : 0.8,
-        y: isLoading ? 0 : -100,
+        x: isLoading ? 0 : -1500,
       }}
       transition={{
-        duration: 1,
+        duration: 1.2,
         ease: "easeInOut"
       }}
     >
