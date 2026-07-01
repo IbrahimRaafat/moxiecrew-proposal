@@ -25,34 +25,33 @@ export default function Investment() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="p-6 sm:p-8 md:p-12 bg-gradient-to-br from-primary to-primary/80 text-white rounded-2xl border-2 border-accent"
+            className="p-6 sm:p-8 md:p-12 bg-white text-black rounded-2xl border-2 border-black"
           >
             <div className="text-center mb-6 sm:mb-8">
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Website Revamp</h3>
             </div>
 
-            <div className="text-center mb-8 pb-8 border-b border-white/20">
-              <p className="text-sm opacity-75 mb-2">Investment</p>
+            <div className="text-center mb-8 pb-8 border-b border-black/20">
               <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
-              <p className="text-sm opacity-75">After specifying details (if wanted)</p>
+              <p className="text-sm text-gray-600">After specifying details</p>
             </div>
 
             <div className="space-y-4">
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Complete website revamp with performance optimization</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>UI/UX redesign with enhanced user experience</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>SEO excellence implementation</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>360-degree analytics setup for continuous improvement</span>
                 </li>
               </ul>
@@ -65,16 +64,15 @@ export default function Investment() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="p-6 sm:p-8 md:p-12 bg-gradient-to-br from-accent to-accent/80 text-white rounded-2xl border-2 border-primary flex flex-col"
+            className="p-6 sm:p-8 md:p-12 bg-black text-white rounded-2xl border-2 border-gray-800 flex flex-col"
           >
             <div className="text-center mb-6 sm:mb-8">
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Current Website Management/Maintenance</h3>
             </div>
 
-            <div className="text-center mb-8 pb-8 border-b border-white/20">
-              <p className="text-sm opacity-75 mb-2">Monthly Retainer</p>
-              <p className="font-display text-5xl font-bold mb-2">LE 15,000</p>
-              <p className="text-sm opacity-75">Per month</p>
+            <div className="text-center mb-8 pb-8 border-b border-gray-600">
+              <p className="font-display text-4xl font-bold mb-2">LE 15,000</p>
+              <p className="text-sm text-gray-400">Monthly Retainer</p>
             </div>
 
             <div className="mb-6">
@@ -82,15 +80,15 @@ export default function Investment() {
                 <h5 className="font-semibold text-lg mb-3">Shopify Management</h5>
                 <ul className="space-y-2 text-sm opacity-90">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
+                    <span className="text-white font-bold">•</span>
                     <span>Manage Shopify plugins and app configurations</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
+                    <span className="text-white font-bold">•</span>
                     <span>Create and populate product, collection, and campaign URLs</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
+                    <span className="text-white font-bold">•</span>
                     <span>Set up new products and collections</span>
                   </li>
                 </ul>
@@ -111,38 +109,37 @@ export default function Investment() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="p-6 sm:p-8 md:p-12 bg-gradient-to-br from-green-600 to-green-500 text-white rounded-2xl border-2 border-green-400"
+            className="p-6 sm:p-8 md:p-12 bg-gray-100 text-black rounded-2xl border-2 border-gray-300"
           >
             <div className="text-center mb-6 sm:mb-8">
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Gift Card & Loyalty Solutions</h3>
             </div>
 
-            <div className="text-center mb-8 pb-8 border-b border-white/20">
-              <p className="text-sm opacity-75 mb-2">Investment</p>
+            <div className="text-center mb-8 pb-8 border-b border-gray-300">
               <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
-              <p className="text-sm opacity-75">After specifying details (if wanted)</p>
+              <p className="text-sm text-gray-600">After specifying details</p>
             </div>
 
             <div className="space-y-4">
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-green-200 font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Physical NFC Cards with embedded loyalty technology</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-200 font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Google & Apple Wallet digital passes integration</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-200 font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Physical and digital gift cards with custom denominations</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-200 font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Branded packaging and design</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-200 font-bold">✓</span>
+                  <span className="text-black font-bold">✓</span>
                   <span>Online and in-store redemption capabilities</span>
                 </li>
               </ul>
