@@ -33,11 +33,11 @@ export default function Home() {
           <Hero />
           {/* Section 1: Executive Summary */}
           <ExecutiveSummary />
-          {/* Section 2: Current Website Review & Recommendations */}
-          <WebsiteReviewAndRecommendations />
-          {/* Section 3: Loyalty Program */}
+          {/* Section 2: Current Website Review & Recommendations - COMMENTED OUT */}
+          {/* <WebsiteReviewAndRecommendations /> */}
+          {/* Section 2: Loyalty Program */}
           <LoyaltySystem />
-          {/* Section 4: Investment/Quotation */}
+          {/* Section 3: Investment/Quotation */}
           <Investment />
           {/* CTA */}
           <CTA />

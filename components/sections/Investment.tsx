@@ -9,7 +9,7 @@ export default function Investment() {
     <section id="investment" className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-16">
-          <AwardBadge number="04" delay={0.1} />
+          <AwardBadge number="03" delay={0.1} />
           <div>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
               Quotation
