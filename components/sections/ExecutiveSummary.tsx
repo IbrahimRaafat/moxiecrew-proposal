@@ -10,7 +10,7 @@ export default function ExecutiveSummary() {
     { icon: Code, name: "Web Development" },
     { icon: Palette, name: "UI/UX Design" },
     { icon: PenTool, name: "Graphic Design" },
-    { icon: null, customImage: "/icons/digital-fabrication.svg", name: "" },
+    { icon: null, customImage: "/icons/digital-fabrication.svg", name: "Digital Fabrication" },
     { icon: Cpu, name: "Hardware Development" },
   ];
 
