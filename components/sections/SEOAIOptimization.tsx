@@ -312,7 +312,7 @@ export default function SEOAIOptimization() {
         </h3>
         <p className="text-lg text-muted mb-6">{slides.seo[0].subtitle}</p>
         <div className="space-y-3">
-          {slides.seo[0].gaps.map((gap, idx) => (
+          {slides.seo[0].gaps?.map((gap, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, x: -10 }}
@@ -349,7 +349,7 @@ export default function SEOAIOptimization() {
           {slides.ai[1].title}
         </h3>
         <div className="space-y-4">
-          {slides.ai[1].layers.map((layer, idx) => (
+          {slides.ai[1].layers?.map((layer, idx) => (
             <div
               key={idx}
               className="p-5 rounded-lg border-l-4 border-l-accent bg-gradient-to-r from-gray-50 to-white"
