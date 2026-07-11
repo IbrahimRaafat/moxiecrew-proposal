@@ -43,11 +43,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#loyalty" className="hover:text-white transition-colors">
-                  Loyalty Program
-                </a>
-              </li>
-              <li>
                 <a href="#investment" className="hover:text-white transition-colors">
                   Quotation
                 </a>

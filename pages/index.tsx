@@ -4,7 +4,6 @@ import Footer from "../components/layout/Footer";
 import Hero from "../components/sections/Hero";
 import ExecutiveSummary from "../components/sections/ExecutiveSummary";
 import WebsiteReviewAndRecommendations from "../components/sections/WebsiteReviewAndRecommendations";
-import LoyaltySystem from "../components/sections/LoyaltySystem";
 import Investment from "../components/sections/Investment";
 import CTA from "../components/sections/CTA";
 
@@ -35,9 +34,7 @@ export default function Home() {
           <ExecutiveSummary />
           {/* Section 2: Current Website Review & Recommendations */}
           <WebsiteReviewAndRecommendations />
-          {/* Section 3: Loyalty Program */}
-          <LoyaltySystem />
-          {/* Section 4: Investment/Quotation */}
+          {/* Section 3: Investment/Quotation */}
           <Investment />
           {/* CTA */}
           <CTA />
