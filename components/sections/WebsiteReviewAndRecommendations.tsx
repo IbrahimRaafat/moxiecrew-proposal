@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import AwardBadge from "../ui/AwardBadge";
 import FeatureCard from "../ui/FeatureCard";
+import ImageCarousel from "../ui/ImageCarousel";
 import {
   Zap,
   Search,
@@ -12,6 +13,15 @@ import {
 
 export default function WebsiteReviewAndRecommendations() {
   const [activeTab, setActiveTab] = useState<"analysis" | "seo" | "improvements">("analysis");
+
+  const carouselImages = [
+    "/market-research/google-search-top-brands.jpg",
+    "/market-research/moxie-crew-positioning.jpg",
+    "/market-research/tier-1-leaders.jpg",
+    "/market-research/tier-2-challengers.jpg",
+    "/market-research/tier-3-specialized.jpg",
+    "/market-research/moxie-crew-overview.jpg",
+  ];
 
   const suggestions = [
     {
@@ -114,6 +124,14 @@ export default function WebsiteReviewAndRecommendations() {
                     </ul>
                   </div>
                 </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <ImageCarousel images={carouselImages} title="Market Research" />
               </motion.div>
             </div>
           )}
