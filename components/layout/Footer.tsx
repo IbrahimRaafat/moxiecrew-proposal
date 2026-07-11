@@ -38,6 +38,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#website-review" className="hover:text-white transition-colors">
+                  Website Review
+                </a>
+              </li>
+              <li>
                 <a href="#loyalty" className="hover:text-white transition-colors">
                   Loyalty Program
                 </a>

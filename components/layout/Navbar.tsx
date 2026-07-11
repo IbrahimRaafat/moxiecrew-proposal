@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const sections = [
   { id: "executive-summary", label: "Executive Summary" },
+  { id: "website-review", label: "Website Review" },
   { id: "loyalty", label: "Loyalty Program" },
   { id: "investment", label: "Quotation" },
 ];
