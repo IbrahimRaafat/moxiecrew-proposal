@@ -31,8 +31,8 @@ export default function Investment() {
             </div>
 
             <div className="text-center mb-8 pb-8 border-b border-black/20">
-              <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
-              <p className="text-sm text-gray-600">After specifying details</p>
+              <p className="font-display text-4xl font-bold mb-1">LE 10,000</p>
+              <p className="text-sm text-gray-600">One-time project fee</p>
             </div>
 
             <div className="space-y-4">
@@ -76,8 +76,8 @@ export default function Investment() {
             </div>
 
             <div className="text-center mb-8 pb-8 border-b border-gray-600">
-              <p className="font-display text-2xl font-bold mb-1">Price to be determined</p>
-              <p className="text-sm text-gray-400">After specifying details</p>
+              <p className="font-display text-4xl font-bold mb-1">LE 40,000</p>
+              <p className="text-sm text-gray-400">One-time project fee</p>
             </div>
 
             <div className="space-y-4">

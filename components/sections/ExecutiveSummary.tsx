@@ -1,18 +1,8 @@
 import { motion } from "framer-motion";
 import AwardBadge from "../ui/AwardBadge";
-import { Package, Code, Palette, PenTool, Cpu, Wrench } from "lucide-react";
 
 export default function ExecutiveSummary() {
   const highlights: string[] = [];
-
-  const services = [
-    { icon: Package, name: "Packaging" },
-    { icon: Code, name: "Web Development" },
-    { icon: Palette, name: "UI/UX Design" },
-    { icon: PenTool, name: "Graphic Design" },
-    { icon: null, customImage: "/icons/digital-fabrication.svg", name: "Digital Fabrication" },
-    { icon: Cpu, name: "Hardware Development" },
-  ];
 
   return (
     <section id="executive-summary" className="py-16 sm:py-24 bg-gradient-to-br from-gray-50 to-white">
@@ -50,38 +40,6 @@ export default function ExecutiveSummary() {
               >
                 <span className="text-primary font-bold text-lg">•</span>
                 <p className="text-base sm:text-lg text-muted">{highlight}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Services Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-16 sm:mt-24"
-        >
-          <h3 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-8 sm:mb-12">
-            Proposed Services
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
-            {services.map((service, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className="p-4 sm:p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all text-center flex flex-col items-center justify-center"
-              >
-                {service.customImage ? (
-                  <img src={service.customImage} alt={service.name} className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4" />
-                ) : service.icon ? (
-                  <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3 sm:mb-4" />
-                ) : null}
-                {service.name && <p className="font-semibold text-sm sm:text-base text-primary">{service.name}</p>}
               </motion.div>
             ))}
           </div>

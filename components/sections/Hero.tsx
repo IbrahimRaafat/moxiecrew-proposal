@@ -44,29 +44,6 @@ export default function Hero() {
           className="mb-4 sm:mb-6 flex flex-col items-center justify-center"
         >
           <img src="/logos/moxie-crew-stacked.svg" alt="Moxie Crew" className="h-16 sm:h-20 md:h-24 w-auto mb-3" />
-          <p className="font-display text-2xl sm:text-3xl font-bold text-primary">Project Proposal</p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 2.35, ease: "easeOut" }}
-          className="mb-8 sm:mb-12 max-w-2xl mx-auto flex flex-col items-center"
-        >
-          <ul className="space-y-2 text-base sm:text-lg md:text-xl text-muted">
-            <li className="flex items-center gap-3 justify-center">
-              <span className="text-primary font-bold">•</span>
-              <span>Website revamp</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center">
-              <span className="text-primary font-bold">•</span>
-              <span>Gift card and loyalty programs solutions</span>
-            </li>
-            <li className="flex items-center gap-3 justify-center">
-              <span className="text-primary font-bold">•</span>
-              <span>Current Website Management/Maintenance</span>
-            </li>
-          </ul>
         </motion.div>
 
         <motion.div
